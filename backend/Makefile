@@ -20,7 +20,10 @@ format:
 	$(VENV)/bin/ruff format .
 
 migrate:
-	$(PYTHON) -m flask --app app db upgrade
+	$(VENV)/bin/alembic upgrade head
+
+migration:
+	$(VENV)/bin/alembic revision --autogenerate -m "$(message)"
 
 seed:
 	$(PYTHON) seed.py

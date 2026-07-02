@@ -53,6 +53,17 @@ bash start-headroom.sh
   dep check (run `patch-transformers.py`)
 - View live requests: `tail -f /tmp/headroom-stderr.log`
 
+## Dev Server Lifecycle (Docker sessions)
+
+When deploying web apps in a Docker dev session, servers launched in the background
+must use `setsid` so they survive shell teardowns. The root Makefile has targets:
+
+- `make run` — starts backend (port 5000) and frontend (port 5173) with setsid
+- `make stop` — kills both via pkill
+
+Always use `make run` / `make stop` for starting/stopping servers in this project.
+Do NOT use raw `nohup` / `&` / `disown` — they won't survive across bash tool calls.
+
 ## Tone
 
 Concise, practical. No unnecessary explanations.
