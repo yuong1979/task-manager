@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 db = SQLAlchemy()
 
 
-class Task(db.Model):
+class Task(db.Model):  # type: ignore[name-defined]
     __tablename__ = "tasks"
 
     id = db.Column(db.Integer, primary_key=True)

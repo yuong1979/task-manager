@@ -81,18 +81,18 @@
 - [x] 5.15 — Commit all, push to feat/task-crud
 
 ### Phase 6 — Test
-- [ ] 6.1 — Write unit tests for models
-- [ ] 6.2 — Write unit tests for routes
-- [ ] 6.3 — Write test fixtures (test client, test DB)
-- [ ] 6.4 — Run tests locally, all pass
-- [ ] 6.5 — Commit tests, push to feat/task-crud
+- [x] 6.1 — Write unit tests for models
+- [x] 6.2 — Write unit tests for routes
+- [x] 6.3 — Write test fixtures (test client, test DB)
+- [x] 6.4 — Run tests locally, all pass
+- [x] 6.5 — Commit tests, push to feat/task-crud
 
 ### Phase 7 — CI
-- [ ] 7.1 — Create .github/workflows/ci.yml
-- [ ] 7.2 — Job: lint (ruff check)
-- [ ] 7.3 — Job: type check (mypy)
-- [ ] 7.4 — Job: test (pytest with SQLite)
-- [ ] 7.5 — Job: build (pip install check)
+- [x] 7.1 — Create .github/workflows/ci.yml
+- [x] 7.2 — Job: lint (ruff check)
+- [x] 7.3 — Job: type check (mypy)
+- [x] 7.4 — Job: test (pytest with SQLite)
+- [x] 7.5 — Job: build (pip install check)
 - [ ] 7.6 — Push, verify CI runs green on the PR
 
 ### Phase 8 — Preview (Staging Deploy)
