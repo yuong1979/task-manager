@@ -64,21 +64,21 @@
 - [x] 4.3 — Push branch, open draft PR against main
 
 ### Phase 5 — Code
-- [ ] 5.1 — Implement Flask app factory
-- [ ] 5.2 — Implement config classes (dev/prod)
-- [ ] 5.3 — Implement SQLAlchemy models
-- [ ] 5.4 — Implement CRUD routes (app/routes/tasks.py)
-- [ ] 5.5 — Implement error handlers (404, 400, 500)
-- [ ] 5.6 — Wire up CORS
-- [ ] 5.7 — Create run.py entrypoint
-- [ ] 5.8 — Test API manually (curl/httpie)
-- [ ] 5.9 — Create React app shell with router
-- [ ] 5.10 — Create TaskList component
-- [ ] 5.11 — Create TaskForm component
-- [ ] 5.12 — Create TaskItem component
-- [ ] 5.13 — Style with basic CSS
-- [ ] 5.14 — Test frontend talks to backend (dev mode)
-- [ ] 5.15 — Commit all, push to feat/task-crud
+- [x] 5.1 — Implement Flask app factory
+- [x] 5.2 — Implement config classes (dev/prod)
+- [x] 5.3 — Implement SQLAlchemy models
+- [x] 5.4 — Implement CRUD routes (app/routes/tasks.py)
+- [x] 5.5 — Implement error handlers (404, 400, 500)
+- [x] 5.6 — Wire up CORS
+- [x] 5.7 — Create run.py entrypoint
+- [x] 5.8 — Test API manually (curl/httpie)
+- [x] 5.9 — Create React app shell with router
+- [x] 5.10 — Create TaskList component
+- [x] 5.11 — Create TaskForm component
+- [x] 5.12 — Create TaskItem component
+- [x] 5.13 — Style with basic CSS
+- [x] 5.14 — Test frontend talks to backend (dev mode)
+- [x] 5.15 — Commit all, push to feat/task-crud
 
 ### Phase 6 — Test
 - [ ] 6.1 — Write unit tests for models
