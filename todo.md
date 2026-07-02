@@ -59,9 +59,9 @@
 - [ ] 3.7 — Commit migration + seed script
 
 ### Phase 4 — Branch
-- [ ] 4.1 — Create feat/task-crud branch from main
-- [ ] 4.2 — Explain conventional commit format
-- [ ] 4.3 — Push branch, open draft PR against main
+- [x] 4.1 — Create feat/task-crud branch from main
+- [x] 4.2 — Explain conventional commit format
+- [x] 4.3 — Push branch, open draft PR against main
 
 ### Phase 5 — Code
 - [ ] 5.1 — Implement Flask app factory
