@@ -17,4 +17,6 @@ def create_app(config_name="default"):
         from app.error_handlers import register_error_handlers
         register_error_handlers(app)
 
+        db.create_all()
+
     return app
