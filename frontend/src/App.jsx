@@ -3,6 +3,8 @@ import TaskList from './TaskList'
 import TaskForm from './TaskForm'
 import './App.css'
 
+const API = import.meta.env.VITE_API_URL || ''
+
 export default function App() {
   const [tasks, setTasks] = useState([])
   const [loading, setLoading] = useState(true)
@@ -14,7 +16,7 @@ export default function App() {
 
   async function fetchTasks() {
     try {
-      const res = await fetch('/api/tasks')
+      const res = await fetch(`${API}/api/tasks`)
       if (!res.ok) throw new Error('Failed to fetch tasks')
       const data = await res.json()
       setTasks(data)
@@ -28,7 +30,7 @@ export default function App() {
 
   async function handleCreate(data) {
     try {
-      const res = await fetch('/api/tasks', {
+      const res = await fetch(`${API}/api/tasks`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -43,7 +45,7 @@ export default function App() {
 
   async function handleUpdate(id, data) {
     try {
-      const res = await fetch(`/api/tasks/${id}`, {
+      const res = await fetch(`${API}/api/tasks/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -58,7 +60,7 @@ export default function App() {
 
   async function handleDelete(id) {
     try {
-      const res = await fetch(`/api/tasks/${id}`, { method: 'DELETE' })
+      const res = await fetch(`${API}/api/tasks/${id}`, { method: 'DELETE' })
       if (!res.ok) throw new Error('Failed to delete task')
       setTasks((prev) => prev.filter((t) => t.id !== id))
     } catch (err) {
