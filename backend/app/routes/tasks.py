@@ -13,7 +13,7 @@ def list_tasks():
 @bp.route("", methods=["POST"])
 def create_task():
     data = request.get_json()
-    if not data or not data.get("title", "").strip():
+    if not data:
         return jsonify({"error": "Title is required"}), 400
     task = Task(
         title=data["title"].strip(),
