@@ -93,11 +93,11 @@
 - [x] 7.3 — Job: type check (mypy)
 - [x] 7.4 — Job: test (pytest with SQLite)
 - [x] 7.5 — Job: build (pip install check)
-- [ ] 7.6 — Push, verify CI runs green on the PR
+- [x] 7.6 — Push, verify CI runs green on the PR
 
 ### Phase 8 — Preview (Staging Deploy)
-- [ ] 8.1 — Add backend/Procfile for Railway
-- [ ] 8.2 — Add backend/railway.json config
+- [x] 8.1 — Add backend/Procfile for Railway
+- [x] 8.2 — Add backend/railway.json config
 - [ ] 8.3 — Connect Railway project to GitHub repo
 - [ ] 8.4 — Configure Railway to deploy the backend/ directory
 - [ ] 8.5 — Configure Railway environment variables
