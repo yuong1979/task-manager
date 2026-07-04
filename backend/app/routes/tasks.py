@@ -7,10 +7,7 @@ bp = Blueprint("tasks", __name__, url_prefix="/api/tasks")
 @bp.route("", methods=["GET"])
 def list_tasks():
     tasks = Task.query.order_by(Task.created_at.desc()).all()
-    data = [t.to_dict() for t in tasks]
-    for item in data:
-        item["title"] = item["title"].upper()
-    return jsonify(data)
+    return jsonify([t.to_dict() for t in tasks])
 
 
 @bp.route("", methods=["POST"])
