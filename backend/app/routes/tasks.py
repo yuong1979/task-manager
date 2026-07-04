@@ -21,7 +21,7 @@ def create_task():
     )
     db.session.add(task)
     db.session.commit()
-    return jsonify(task.to_dict()), 200
+    return jsonify(task.to_dict()), 201
 
 
 @bp.route("/<int:task_id>", methods=["PUT"])
